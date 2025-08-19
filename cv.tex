@@ -50,6 +50,11 @@
 \usepackage{url}
 \usepackage{parskip} 	
 
+% Cyrillic support
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
 %other packages for formatting
 \RequirePackage{color}
 \RequirePackage{graphicx}
@@ -142,61 +147,71 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Рогоза Ярослав Евгеньевич} \\[7.5pt]
+\href{tel:+79227542689}{\raisebox{-0.05\height}\faMobile \ +7 (922) 754-26-89} \ $|$ \ 
+\href{mailto:r.yaroslav1w@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ r.yaroslav1w@gmail.com} \ $|$ \ 
+Telegram: @ne_onnn \\
+Москва, Россия
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically complied and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+%Интересы / Ключевые слова / Резюме
+\section{О себе}
+Выпускник Экономического факультета МГУ имени М.В. Ломоносова. Увлекаюсь статистикой и машинным обучением. 
+Работаю ведущим продуктовым аналитиком, провожу полный цикл A/B-тестирования, развиваю data-driven подход, 
+исследую причинно-следственные связи и оцениваю экономический эффект гипотез. Быстро обучаюсь, аккуратно 
+отношусь к срокам и задачам, умею работать в команде и самостоятельно решать проблемы.
 
 %Experience
-\section{Work Experience}
+\section{Опыт работы}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+\begin{joblong}{Ведущий продуктовый аналитик — ВкусВилл}{Июль 2023 — настоящее время}
+\item Полный цикл A/B-тестирования, участие в построении общего древа метрик
+\item Развитие data-driven подхода, исследования причинно-следственных связей (CausalImpact, pymc, causalpy)
+\item Использование ML-моделей для прогнозирования и анализа (ETNA, Prophet)
+\item Разработка автоматической отчётности и телеграм-ботов с оповещениями (Power BI, Superset, aiogram)
+\item ETL-процессы на базе Apache Airflow, работа с DWH (Greenplum, ClickHouse)
+\item Онбординг аналитиков, участие в собеседованиях и подготовке тестовых задач
 \end{joblong}
-  
-%Projects
-\section{Projects}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+\begin{jobshort}{Ключевые результаты}{ } 
+Помог обнаружить и исправить аномалии в вознаграждении курьеров (экономия $\approx 5\%$ ФОТ). 
+Инициировал тест автоматической маршрутизации курьеров, что снизило click-to-eat. 
+\newline Суммарный охват пользователей отчётов — $\approx 100$ человек в месяц, телеграм-ботов — $\approx 500$ сотрудников поддержки.
+\end{jobshort}
+  
+%Проекты (при необходимости)
+%\section{Проекты}
+%
+%\begin{tabularx}{\linewidth}{ @{}l r@{} }
+%\textbf{Название проекта} & \hfill \href{https://link}{Ссылка} \\[3.75pt]
+%\multicolumn{2}{@{}X@{}}{Краткое описание проекта и вклада.}  \\
+%\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
+\section{Образование}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+2025 & Бакалавр, Экономика — \textbf{МГУ им. М.В. Ломоносова}, Экономический факультет, Москва \\
+\end{tabularx}
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill 222  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+\section{Курсы}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2024 & Введение в глубокое обучение — Институт теоретической и математической физики МГУ \\
+2024 & ML-инжиниринг — ИТМО AI talent hub \texttimes{} Karpov.courses \\
+2024 & Practical Bayes (pymc) — Экономический факультет МГУ \\
+2023 & Аналитик данных — Яндекс Практикум \\
+2023 & Машинное обучение для решения прикладных задач — ИТМФ МГУ \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
+\section{Публикации}
 \begin{refsection}[citations.bib]
 \nocite{*}
 \printbibliography[heading=none]
@@ -205,10 +220,19 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Навыки}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Аналитика &  \normalsize{A/B-тестирование, причинно-следственный анализ (CausalImpact, pymc, causalpy), EDA, Ad-hoc анализ, эконометрика}\\
+Data &  \normalsize{SQL, ClickHouse, Greenplum, Apache Airflow (ETL)}\\
+Python &  \normalsize{pandas, numpy, scikit-learn, LightGBM, CatBoost, XGBoost, ETNA, Prophet, PyTorch, NLTK, folium}\\
+BI / Визуализация &  \normalsize{Power BI, Apache Superset}\\
+Инструменты &  \normalsize{aiogram, ambrosia}\\
+\end{tabularx}
+
+\section{Языки}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Русский & Родной \\
+Английский & C1 — Продвинутый \\
 \end{tabularx}
 
 \vfill
